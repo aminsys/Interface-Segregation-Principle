@@ -2,7 +2,7 @@ using System.Collections.ObjectModel;
 
 namespace Interface_Segregataion_Principle
 {
-    public class DataSource : IDataSource
+    public class DataSource : IDataSource, IDataSourceReader, IDataSourceWriter
     {
         private readonly ICollection<Record> _records = new Collection<Record>();
 
